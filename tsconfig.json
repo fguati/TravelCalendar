@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ES2022",
+        "noEmitOnError": true,
+        "outDir": "app/dist/js",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "experimentalDecorators": true,
+        "sourceMap": true,
+        "target": "ES2022",
+        "baseUrl": "./app/src",
+        "paths": {
+            "#@/*":[
+                "*"
+            ]
+        }
+    },
+    "include": ["app/src/**/*"]
+}

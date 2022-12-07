@@ -1,5 +1,13 @@
 {
   "devDependencies": {
     "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "compile": "tsc",
+    "watch": "tsc -w"
+  },
+  "imports": {
+    "#@/*": "./app/dist/js/*"
   }
+
 }
