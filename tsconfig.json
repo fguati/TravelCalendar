@@ -2,7 +2,7 @@
     "compilerOptions": {
         "module": "ES2022",
         "noEmitOnError": true,
-        "outDir": "app/dist/js",
+        "outDir": "app/dist",
         "noImplicitAny": true,
         "removeComments": true,
         "experimentalDecorators": true,

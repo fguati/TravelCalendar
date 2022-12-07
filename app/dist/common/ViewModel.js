@@ -9,7 +9,6 @@ export default class View {
         this._parentId = _parentId;
         this._tag = _tag;
         const targetElement = document.querySelector('#' + _id);
-        console.log('entrou no constructor');
         if (!targetElement) {
             this.createElement();
         }

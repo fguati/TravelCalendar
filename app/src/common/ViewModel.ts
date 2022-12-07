@@ -5,7 +5,6 @@ export default abstract class View {
 
     constructor(protected _id: string, protected _parentId: string, protected _tag:string){
         const targetElement: HTMLElement = document.querySelector('#' + _id);
-        console.log('entrou no constructor')
         if (!targetElement) {
             this.createElement();
         } else {

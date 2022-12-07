@@ -1,0 +1,7 @@
+@import url('./app/dist/CalendarDay/CalendarDay.module.css');
+
+:root {
+    --base_white: #FAFAFA;
+    --calendar_blue: #badcfd;
+    --base_black: rgb(26, 25, 25);
+}

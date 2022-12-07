@@ -1,0 +1,15 @@
+.calendarDay {
+    border: 1px solid;
+    background: linear-gradient(135deg, var(--base_white), var(--calendar_blue));
+    border-radius: 10%;
+    display: block;
+    width: 13vw;
+    height: 13vw;
+}
+
+.calendarDay__dayNumber {
+    margin: 10%;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--base_black);
+}
