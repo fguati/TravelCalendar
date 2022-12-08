@@ -1,5 +1,5 @@
 'use strict';
-import ViewModel from "../common/ViewModel.js";
+import ViewModel from "../../common/ViewModel.js";
 export default class CalendarDayView extends ViewModel {
     _id;
     _parentId;

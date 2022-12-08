@@ -1,8 +1,9 @@
 'use strict';
-import CalendarDay from "./CalendarDay/modelCalendarDay.js";
-import ViewCalendarDay from './CalendarDay/ViewCalendarDay.js';
+import Calendar from "./Components/Calendar/modelCalendar.js";
+import ViewCalendar from "./Components/Calendar/ViewCalendar.js";
+import CalendarDay from "./Components/CalendarDay/modelCalendarDay.js";
 let diaTeste = new CalendarDay(new Date());
-let viewTeste = new ViewCalendarDay(diaTeste, 'calendarTeste', 'teste', 'main');
+let calendarTeste = new Calendar(diaTeste);
+let viewTeste = new ViewCalendar(calendarTeste, diaTeste, 'calendario', 'teste', 'div');
 viewTeste.render();
-console.log(diaTeste.year);
 //# sourceMappingURL=teste.js.map

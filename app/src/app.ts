@@ -1,5 +1,5 @@
 'use strict'
 
-import CalendarDay from "./CalendarDay/modelCalendarDay.js"
-import ViewCalendarDay from './CalendarDay/ViewCalendarDay.js'
+import CalendarDay from "./Components/CalendarDay/modelCalendarDay.js"
+import ViewCalendarDay from './Components/CalendarDay/ViewCalendarDay.js'
 
