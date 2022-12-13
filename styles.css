@@ -1,5 +1,7 @@
-@import url('./app/dist/Components/CalendarDay/CalendarDay.module.css');
-@import url('./app/dist/Components/Calendar/Calendar.module.css');
+@import url('./app/dist/common/css/Calendar.module.css');
+@import url('./app/dist/common/css/CalendarDay.module.css');
+@import url('./app/dist/common/css/MonthName.module.css');
+
 
 :root {
     --base_white: #FAFAFA;

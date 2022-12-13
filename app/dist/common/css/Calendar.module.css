@@ -1,0 +1,10 @@
+.calendar {
+    display: grid;
+    grid-template-columns: auto repeat(7, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    background: linear-gradient(135deg, var(--base_white), var(--calendar_blue));
+    border-radius: 10px;
+    border: 1px solid;
+    gap: 0;
+    height: 300vh;
+}

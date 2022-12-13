@@ -1,0 +1,6 @@
+.calendar__monthName{
+    grid-row: span 4;
+    grid-column: 1;
+    font-size: 5em;
+    writing-mode: vertical-lr;
+}

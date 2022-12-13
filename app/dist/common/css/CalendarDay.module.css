@@ -1,10 +1,8 @@
 .calendarDay {
     border: 1px solid;
-    background: linear-gradient(135deg, var(--base_white), var(--calendar_blue));
-    border-radius: 10%;
     display: block;
-    width: 13vw;
-    height: 13vw;
+    width: 100%;
+    height: auto;
 }
 
 .calendarDay__dayNumber {

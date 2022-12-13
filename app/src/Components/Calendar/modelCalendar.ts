@@ -1,6 +1,9 @@
 'use strict'
 
 import CalendarDay from "../CalendarDay/modelCalendarDay.js";
+import { Months } from "../../common/enum/months.js";
+import Month from "../MonthName/modelMonth.js";
+
 
 export default class Calendar {
     protected _lastMonth: number;
@@ -10,21 +13,36 @@ export default class Calendar {
     protected _nextMonthsYear: number;
 
     listOfCalendarDays: CalendarDay[];
+
     
     constructor(protected _currentDate: CalendarDay){
-        _currentDate.month -= 1;
-        this._lastMonth = _currentDate.month;
-        this._lastMonthsYear = _currentDate.year;
-
-        _currentDate.month += 1;
         this._currentDate = _currentDate
-
-
-        _currentDate.month += 1;
-        this._nextMonth = _currentDate.month;
-        this._nextMonthsYear = _currentDate.year;
+        let referenceDate = new CalendarDay(this._currentDate.date)
+        referenceDate.month -= 1;
+        this._lastMonth = referenceDate.month;
+        this._lastMonthsYear = referenceDate.year;
+        
+        referenceDate.month += 2;
+        this._nextMonth = referenceDate.month;
+        this._nextMonthsYear = referenceDate.year;
 
         this.listOfCalendarDays = this.populateDates()
+    }
+
+    get lastMonth(): Month {
+        return new Month(this._lastMonth, this._lastMonthsYear, Months[this._lastMonth])
+    }
+
+    get currentMonth(): Month {
+        return new Month(this._currentDate.month, this._currentDate.year, this._currentDate.monthName)
+    }
+
+    get nextMonth(): Month {
+        return new Month(this._nextMonth, this._nextMonthsYear, Months[this._nextMonth])
+    }
+
+    get monthsDisplayed(): Month[] {
+        return [this.lastMonth, this.currentMonth, this.nextMonth]
     }
 
     private populateDates(): CalendarDay[]{
@@ -47,5 +65,7 @@ export default class Calendar {
 
 
 }
+
+
 
         

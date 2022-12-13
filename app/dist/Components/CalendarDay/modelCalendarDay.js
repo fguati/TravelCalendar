@@ -1,4 +1,5 @@
 'use strict';
+import captilize from "../../common/helperFunctions/captilize.js";
 import { Months } from "../../common/enum/months.js";
 export default class CalendarDay {
     _date;
@@ -28,9 +29,8 @@ export default class CalendarDay {
         return this._date.getMonth();
     }
     get monthName() {
-        let monthName = Months[this.month].toLowerCase();
-        const firstLetter = monthName[0].toUpperCase();
-        monthName = firstLetter + monthName.substring(1);
+        let monthName = Months[this.month];
+        monthName = captilize(monthName);
         return monthName;
     }
     get year() {
